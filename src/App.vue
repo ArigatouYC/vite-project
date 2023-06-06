@@ -1,11 +1,27 @@
 <script setup lang="ts">
+import request from '@/utils/request'
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    request({
+        url: 'user/login',
+        method: 'post',
+        data: {
+            username: 'admin',
+            password: '111111'
+        }
+    }).then((res)=>{
+        console.log(res);
+    })
+})
 </script>
 
 <template>
     <h1>Hello</h1>
     <el-button type="primary">Hello</el-button>
-        <SvgIcon name="phone" color="red" width="200px" height="200px"></SvgIcon>
+    <SvgIcon name="phone" color="red" width="200px" height="200px"></SvgIcon>
+
+    <RouterView></RouterView>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
