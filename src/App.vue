@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import SvgIcon from "./components/SvgIcon/index.vue";
 </script>
 
 <template>
+    <h1>Hello</h1>
     <el-button type="primary">Hello</el-button>
         <SvgIcon name="phone" color="red" width="200px" height="200px"></SvgIcon>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

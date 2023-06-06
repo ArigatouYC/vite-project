@@ -11,4 +11,11 @@ import "virtual:svg-icons-register";
 const app = createApp(App);
 
 app.use(ElementPlus, { locale: zhCn });
+
+import GlobalComponents from "@/components/index.ts";
+app.use(GlobalComponents);
+
+// import "./style.css";
+import "@/styles/index.scss"
+
 app.mount("#app");
