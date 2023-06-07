@@ -23,7 +23,6 @@ let router = createRouter({
             path: "/:pathMatch(.*)*",
             redirect: "/err404",
         }
-
     ]
 });
 
